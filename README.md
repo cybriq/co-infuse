@@ -16,3 +16,5 @@ Coinfuse is the name of the protocol we are proposing in the development of this
 It will use a liquidity pool system where users are able to acquire chaumian coins issued by various router nodes that pay for bandwidth by the session, so each node unwraps the part that is meant for them, they receive the payment, and forward the packet as per the delivery instructions.
 
 One of the delivery destinations will be the Bitcoin mempool, then there will be rendezvous points for hidden services, and tunnel exit will have another delivery mode as well, which will likely be a lot more expensive due to the abuse potential and counterattack that may occur for such proxy exit points.
+
+Coinfuse will be built on the libp2p library, piggybacking on the distributed node database it uses as a means to connecting to services, and service codes will identify what services a node is offering at a given time, relay, addresses they are rendezvous points for, and whether they will allow exit traffic to tunnel out.
